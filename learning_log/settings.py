@@ -59,7 +59,7 @@ ROOT_URLCONF = 'learning_log.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, 'learning_log/templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -141,6 +141,9 @@ if os.getcwd() == '/app':
 
     # 支持所有的主机头（host header）
     ALLOWED_HOSTS = ['l-logs.herokuapp.com']
+    #ALLOWED_HOSTS = ['localhost']
+    
+    # 安全警告：不要在在线环境中启用调试！
     DEBUG = False
 
     # 静态资产配置
