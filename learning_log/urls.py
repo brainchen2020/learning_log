@@ -23,4 +23,5 @@ urlpatterns = [
     re_path(r'', include('learning_logs.urls', namespace='learning_logs') ),
 
     re_path(r'', include('users.urls', namespace='users')),
+    re_path(r'', include('movies.urls' , namespace='movies')),
 ]

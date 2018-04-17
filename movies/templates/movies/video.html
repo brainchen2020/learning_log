@@ -1,0 +1,37 @@
+
+{% extends "learning_logs/base.html" %}
+    {% load bootstrap3 %}
+     {% block header %}
+        <h2>Daily English Dictation</h2>
+    {% endblock header %}
+
+
+ <!--{% for abouts in about %}-->
+<!--<div class="video">-->
+    <!--<div>-->
+        <!--&lt;!&ndash;{{abouts.title | safe}}&ndash;&gt;-->
+
+        <!--<h3>videos https://youtu.be/pCskVAIn7qY</h3>-->
+        <!--<video width="1349" height="480" src="https://youtu.be/pCskVAIn7qY"></video>-->
+        <!--<iframe width="1349" height="480" src="https://www.youtube.com/embed/pCskVAIn7qY"-->
+                <!--frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>-->
+
+    <!--</div>-->
+<!--</div>-->
+<!--<div class="">-->
+    <!--<h1>about us</h1>-->
+    <!--{{abouts.content}}-->
+    <!--<h1>contact us </h1>-->
+    <!--{{abouts.phone}}-->
+<!--</div>-->
+    <!--&lt;!&ndash;{% endfor %}&ndash;&gt;-->
+
+{% block content %}
+<div class="page">
+    <!--{{ about.title | safe}}-->
+    <!--<video width="1349" height="480" src="https://youtu.be/pCskVAIn7qY"></video>-->
+    <iframe width="100%" height="480" src="{{video.url}}"
+                frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</div>
+
+{% endblock content %}

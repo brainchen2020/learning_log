@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'users',
     #第三方应用程序
     'bootstrap3',
+     'movies',
 ]
 
 MIDDLEWARE = [
